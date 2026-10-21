@@ -1,0 +1,135 @@
+{
+  "model_name": "RandomForestClassifier",
+  "version": "1.0.0",
+  "trained_on": "synthetic_students.csv",
+  "n_samples": 5000,
+  "target": "risk_label",
+  "features": [
+    "gender",
+    "age",
+    "faculty",
+    "department",
+    "academic_year",
+    "enrollment_type",
+    "admission_score",
+    "gpa",
+    "total_credits",
+    "credits_completed",
+    "failed_courses_count",
+    "current_semester",
+    "attendance_rate",
+    "absence_days",
+    "late_submissions",
+    "library_visits",
+    "lms_logins",
+    "extracurricular",
+    "disciplinary_actions",
+    "tuition_status",
+    "financial_aid",
+    "previous_warnings",
+    "advisor_meetings",
+    "stress_level",
+    "part_time_job",
+    "commute_distance_km"
+  ],
+  "numeric_features": [
+    "age",
+    "academic_year",
+    "admission_score",
+    "gpa",
+    "total_credits",
+    "credits_completed",
+    "failed_courses_count",
+    "current_semester",
+    "attendance_rate",
+    "absence_days",
+    "late_submissions",
+    "library_visits",
+    "lms_logins",
+    "disciplinary_actions",
+    "previous_warnings",
+    "advisor_meetings",
+    "stress_level",
+    "commute_distance_km"
+  ],
+  "categorical_features": [
+    "gender",
+    "faculty",
+    "department",
+    "enrollment_type",
+    "extracurricular",
+    "tuition_status",
+    "financial_aid",
+    "part_time_job"
+  ],
+  "metrics": {
+    "accuracy": 0.938,
+    "precision": 0.9108,
+    "recall": 0.8938,
+    "f1": 0.9022,
+    "roc_auc": 0.9294
+  },
+  "top_features": [
+    {
+      "feature": "gpa",
+      "importance": 0.25718309783871374
+    },
+    {
+      "feature": "failed_courses_count",
+      "importance": 0.18367644110922765
+    },
+    {
+      "feature": "attendance_rate",
+      "importance": 0.07751022353252211
+    },
+    {
+      "feature": "previous_warnings",
+      "importance": 0.07715637515675729
+    },
+    {
+      "feature": "library_visits",
+      "importance": 0.06243302435455161
+    },
+    {
+      "feature": "absence_days",
+      "importance": 0.04626079948012029
+    },
+    {
+      "feature": "lms_logins",
+      "importance": 0.034213145771078174
+    },
+    {
+      "feature": "admission_score",
+      "importance": 0.03399908021418886
+    },
+    {
+      "feature": "stress_level",
+      "importance": 0.02620214359474851
+    },
+    {
+      "feature": "commute_distance_km",
+      "importance": 0.019315743913348237
+    },
+    {
+      "feature": "total_credits",
+      "importance": 0.0186691997482652
+    },
+    {
+      "feature": "credits_completed",
+      "importance": 0.01821997757911259
+    },
+    {
+      "feature": "late_submissions",
+      "importance": 0.0181766301609222
+    },
+    {
+      "feature": "advisor_meetings",
+      "importance": 0.017434807988249614
+    },
+    {
+      "feature": "current_semester",
+      "importance": 0.010331804831266668
+    }
+  ],
+  "random_state": 42
+}
